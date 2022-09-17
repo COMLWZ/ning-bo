@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product quality</title>
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="./assets/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <!-- bootstrap图标库 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/quality.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- 大尺寸头部导航 -->
+        <div class="d-none d-lg-flex shadow_bg">
+            <div class="col-1"></div>
+            <div class="col-2">
+                <div class="col-8">
+                    <a href="./index.html">
+                        <img src="./assets/images/logo.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="fin col-2 d-flex flex-column">
+                <div class="above flex-fill"></div>
+                <div class="below flex-fill d-flex flex-column">
+                    <div class="above flex-fill d-flex align-items-start">
+                        <div class="col-md-2 offset-2"><img src="./assets/images/F.png" alt=""></div>
+                        <div class="col-md-2"><img src="./assets/images/in.png" alt=""></div>
+                        <div class="col-md-2"> <img src="./assets/images/YOUTOBE.png" alt=""></div>
+                        <div class="col-md-2"><img src="./assets/images/WHATSAPP.png" alt=""></div>
+                    </div>
+                    <div class="below flex-fill"></div>
+                </div>
+            </div>
+            <div class="nav_wrap col-7 d-flex shadow_f">
+                <div class="col-11 d-flex flex-column">
+                    <div class="above flex-fill"></div>
+                    <div class="below flex-fill d-flex flex-column">
+                        <div class="above flex-fill d-flex">
+                            <ul class="nav col-11 d-table">
+                                <li class="nav-item col-2 d-table-cell"></li>
+                                <li class="nav-item active d-table-cell">
+                                    <div class="dropdown">
+                                        <a class="nav-link" href="./products.html" id="dropdownMenuButton"
+                                            data-bs-toggle="dropdown" aria-expanded="false"
+                                            style="color: #000;font-weight:700;">
+                                            PRODUCTS
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <li><a class="dropdown-item LugBolts" href="./products.html#LugBolts">Lug
+                                                    Bolts</a>
+                                            </li>
+                                            <li><a class="dropdown-item LugNuts" href="./products.html#LugNuts">Lug
+                                                    Nuts</a>
+                                            </li>
+                                            <li><a class="dropdown-item WheelLocks"
+                                                    href="./products.html#WheelLocks">Wheel
+                                                    Locks</a>
+                                            </li>
+                                            <li><a class="dropdown-item Studs" href="./products.html#Studs">Studs</a>
+                                            </li>
+                                            <li><a class="dropdown-item Spacers"
+                                                    href="./products.html#Spacers">Spacers</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item d-table-cell">
+                                    <a class="nav-link" href="./procedures.html">PROCEDURES</a>
+                                </li>
+                                <li class="nav-item d-table-cell">
+                                    <a class="nav-link" href="./aboutUs.html">ABOUT US</a>
+                                </li>
+                                <li class="nav-item d-table-cell">
+                                    <a class="nav-link active" href="./blog.html">BLOG</a>
+                                </li>
+                                <li class="nav-item d-table-cell">
+                                    <a class="nav-link" href="./contactUs.html">CONTACT US</a>
+                                </li>
+                            </ul>
+                            <div class="col-1 search_wrap d-flex">
+                                <div class="flex-fill"></div>
+                                <div class="flex-fill d-flex flex-column position-relative">
+                                    <i class="bi bi-search text-center" onclick="searchInputToggle(true)"></i>
+                                    <div class="search_part position-absolute" style="right: 0;top:0;">
+                                        <div class="search_main">
+                                            <input type="text" id="searchInput" placeholder="search..."
+                                                onfocus="handleFocus()" onblur="handleBlur()"
+                                                oninput="searchInput(this.value)">
+                                            <div class="pattern">
+                                                <span class="p"></span>
+                                                <span>&nbsp;:</span>
+                                            </div>
+                                            <i class="bi bi-search"></i>
+                                            <i class="bi bi-x-lg" onclick="searchInputToggle(false)"></i>
+                                        </div>
+                                        <div class="s_pattern">
+                                            <ul>
+                                                <li onmousedown="patternCheck(this)">All</li>
+                                                <li onmousedown="patternCheck(this)">Product Name</li>
+                                                <li onmousedown="patternCheck(this)">Product</li>
+                                                <li onmousedown="patternCheck(this)">Keyword</li>
+                                                <li onmousedown="patternCheck(this)">Summary</li>
+                                                <li onmousedown="patternCheck(this)">Description</li>
+                                                <li onmousedown="patternCheck(this)">Multi Field</li>
+                                                <li onmousedown="patternCheck(this)">Summary</li>
+                                                <li onmousedown="patternCheck(this)">Description</li>
+                                            </ul>
+                                        </div>
+                                        <div class="recommend">
+                                            <ul>
+                                                <li>
+                                                    <a href="./productDetail.html">
+                                                        <img src="	https://iirorwxhmjmplj5m.ldycdn.com/cloud/lnBpiKqmlpSRjjilnnqriq/Tesla-240-240.jpg"
+                                                            alt="">
+                                                        <span>Tesla Model 3/Y Lug Nut</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./productDetail.html">
+                                                        <img src="	https://iirorwxhmjmplj5m.ldycdn.com/cloud/lnBpiKqmlpSRjjilnnqriq/Tesla-240-240.jpg"
+                                                            alt="">
+                                                        <span>Tesla Model 3/Y Lug Nut</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./productDetail.html">
+                                                        <img src="	https://iirorwxhmjmplj5m.ldycdn.com/cloud/lnBpiKqmlpSRjjilnnqriq/Tesla-240-240.jpg"
+                                                            alt="">
+                                                        <span>Tesla Model 3/Y Lug Nut</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-fill"></div>
+                            </div>
+                        </div>
+                        <div class="below flex-fill"></div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <!-- 小尺寸头部导航 -->
+        <div class="d-block d-lg-none small">
+            <div class="small_navbar d-flex justify-content-between align-items-center">
+                <div class="left">
+                    <i class="bi bi-list" style="font-size: 20px;" onclick="menuSlide(this)"></i>
+                    <div class="menu_wrap">
+                        <div class="nav-item">
+                            <div>
+                                <a href="./products.html">Product</a>
+                                <i class="bi bi-chevron-down" onclick="slideDown(this)"></i>
+                            </div>
+                            <div class="second-item">
+                                <a href="./products.html#LugBolts">Lug Bolts</a>
+                                <a href="./products.html#LugNuts">Lug Nuts</a>
+                                <a href="./products.html#WheelLocks">Wheel Locks</a>
+                                <a href="./products.html#Studs">Studs</a>
+                                <a href="./products.html#Spacers">Spacers</a>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            <a href="./procedures.html">Procedures</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="./aboutUs.html">About us</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="./blog.html">Blog</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="./contactUs.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="center">
+                    <a href="./index.html">
+                        <img src="./assets/images/logo2.png" alt="" style="max-width: 100%;max-height:100%;">
+                    </a>
+                </div>
+                <div class="right">
+                    <i class="bi bi-search" style="font-size: 16px;" onclick="searchToggle(this)"></i>
+                </div>
+            </div>
+            <div class="search_slide">
+                <div class="search_wrap">
+                    <input type="text" placeholder="search...">
+                    <i class="bi bi-search"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container_outer">
+        <section class="headline">
+            <div class="title">
+                BLOG CENTER
+            </div>
+        </section>
+        <section class="container_main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="content">
+                            <div class="title">
+                                <h1>Product quality</h1>
+                                <p>
+                                    <label>
+                                        Views:
+                                        <span>15</span>
+                                    </label>
+                                    <label>
+                                        Author:
+                                        <span>Site Editor</span>
+                                    </label>
+                                    <label>
+                                        Publish Time:
+                                        <span>2021-03-05</span>
+                                    </label>
+                                    <label>
+                                        Origin:
+                                        <span>Site</span>
+                                    </label>
+                                </p>
+                            </div>
+                            <div class="detail">
+                                <p>Product quality is our consistent goal. With our scrutinized quality control
+                                    procedures, advanced production tools, and professional teams, we strive to provide
+                                    our customers with satisfying quality goods and services.</p>
+                            </div>
+                            <div class="pre_next">
+                                <ul>
+                                    <li class="next">
+                                        <a href="./ourPartner.html">Next: Our partner</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="blogs">
+                            <div class="title">
+                                <h2>RELATED BLOGS</h2>
+                            </div>
+                            <div class="blo_bd">
+                                <ul>
+                                    <li>
+                                        <a href="./productQuality.html" target="_blank">
+                                            <img src="	https://rrrorwxhmjmplj5m.ldycdn.com/cloud/loBpiKqmlpSRoiokojlmip/blog-460-460.jpg
+                                            " alt="">
+                                            <p>Product quality</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ourPartner.html" target="_blank">
+                                            <img src="https://rrrorwxhmjmplj5m.ldycdn.com/cloud/ljBpiKqmlpSRoiokojipip/blog-460-460.jpg
+                                            " alt="">
+                                            <p>Product quality</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./companyProfile.html" target="_blank">
+                                            <img src="	https://jjrorwxhmjmplj5m.ldycdn.com/cloud/loBpiKqmlpSRoiokojqoip/blog-460-460.jpg
+                                            " alt="">
+                                            <p>Product quality</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-md">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <div class="column">
+                        <div style="margin-bottom: 20px;">
+                            <a href="">
+                                <img src="./assets/images/shenzhaoshangbiao.jpg" alt="" class="img-fluid"
+                                    style="width: 100%">
+                            </a>
+                        </div>
+                        <div class="n-link text-center" style="margin-top: 10px;margin-bottom:30px;">
+                            <a href="" class="facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="" class="linkedin">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="" class="twitter">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="" class="youtube">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                            <a href="" class="wechat position-relative">
+                                <i class="bi bi-wechat"></i>
+                                <div class="qr_code">
+                                    <i class="bi bi-caret-down"></i>
+                                    <img src="https://iirorwxhmjmplj5m.ldycdn.com/cloud/ljBpiKqmlpSRoiilirmiiq/QR-code.jpg"
+                                        alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="div">
+                            <div class="email-group position-relative">
+                                <input type="text" placeholder="Email">
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1" style="height:100px"></div>
+                <div class="row col-12 col-lg-8">
+                    <div class="col-12 col-lg-4 col_item" style="padding-left: 25px;">
+                        <h2>QUICK LINKS</h2>
+                        <ul>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="./index.html" class="Home">Home</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="./products.html" class="Products">Products</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="./procedures.html" class="Procedures">Procedures</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="./aboutUs.html" class="AboutUs">About Us</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="./blog.html" class="Blog active">Blog</a>
+                            </li>
+
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="./contactUs.html" class="ContactUs">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4 col_item" style="padding-left: 25px;">
+                        <h2>PRODUCTS</h2>
+                        <ul>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="./products.html#LugNuts" class="LugNuts">Lug Nuts</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="./products.html#WheelLocks" class="WheelLocks">Wheel Locks</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="./products.html#LugBolts" class="LugBolts">Lug Bolts</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="./products.html" class="BoltLocks">Bolt Locks</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="./products.html#Studs" class="Studs">Studs</a>
+                            </li>
+
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="./products.html#Spacers" class="Spacers">Spacers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4 col_item">
+                        <h2>CONTACT US</h2>
+                        <ul>
+                            <li>
+                                Email:
+                                <a href="">shun_721@163.com</a>
+                            </li>
+                            <li>
+                                Mob:
+                                <span>0086-18969891229</span>
+                            </li>
+                            <li>
+                                Tel:
+                                <span>0086-18969891229</span>
+                            </li>
+                            <li>
+                                Fax:
+                                <span>0086-18969891229</span>
+                            </li>
+                            <li>
+                                Whatsapp/Wechat:
+                                <span>18969891229</span>
+                            </li>
+                            <li>
+                                Address:
+                                <span>No.387 Chaoyang Road, Jiangshan Town, Yinzhou District, Ningbo, Zhejiang,
+                                    P.R.China, 315191</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding: 8px 0;">
+                <p class="text-center" style="font-size: 14px;margin-bottom: 0;">​Copyright 2021 Ningbo Shenzhao Auto
+                    Parts Co., Ltd.
+                    Support by haipai</p>
+            </div>
+        </div>
+        <!-- 工具栏 -->
+        <div class="tool_bar">
+            <div class="tool_item" onclick="openTool(this,'tel')">
+                <i class="bi bi-telephone-fill"></i>
+                <div class="btn">0086-574-83035429</div>
+            </div>
+            <div class="tool_item" onclick="openTool(this,'sms')">
+                <i class="bi bi-chat-dots-fill"></i>
+                <div class="btn">0086-18969891229</div>
+            </div>
+            <div class="tool_item" onclick="openTool(this,'mail')">
+                <i class="bi bi-envelope-fill"></i>
+                <div class="btn">shun_721@163.com</div>
+            </div>
+            <div class="tool_item d-none d-md-block back_up back_up_hide">
+                <a href="#">
+                    <i class="bi bi-caret-up-square-fill"></i>
+                </a>
+            </div>
+        </div>
+        <!-- 返回顶部 -->
+        <div class="back_up d-none d-md-block back_up_hide">
+            <a href="#" title="回到顶部">
+                <i class="bi bi-chevron-bar-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+</body>
+
+</html>

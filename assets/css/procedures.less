@@ -1,0 +1,89 @@
+body {
+    background-image: url(https://jjrorwxhmjmplj5m.ldycdn.com/cloud/loBpiKqmlpSRoimlplliip/Procedures.jpg);
+
+    &::after {
+        filter: brightness(.8);
+    }
+}
+
+.container_outer {
+    >.container_main {
+        padding-bottom: 60px;
+
+        >.container {
+            >.pro_item {
+                padding-top: 60px;
+
+                .title_wrap {
+                    padding: 0;
+
+                    .img_wrap {
+                        margin-top: 30px;
+
+                        .item {
+                            padding-bottom: 21px;
+                            transition: .6s;
+
+                            &:first-child {
+                                padding-right: 14px;
+                            }
+
+                            &:nth-child(2) {
+                                padding-left: 7px;
+                                padding-right: 7px;
+                            }
+
+                            &:last-child {
+                                padding-left: 14px;
+                            }
+
+                            a {
+                                display: block;
+
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container_outer {
+        >.container_main {
+            >.container {
+                padding: 0 20px;
+
+                >.pro_item {
+                    .title_wrap {
+                        .img_wrap {
+                            .item {
+                                padding-bottom: 20px;
+
+                                &:first-child {
+                                    padding-right: 10px;
+                                }
+
+                                &:nth-child(2) {
+                                    padding-left: 10px;
+                                    padding-right: 0;
+                                }
+
+                                &:last-child {
+                                    padding-left: 0;
+                                    padding-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

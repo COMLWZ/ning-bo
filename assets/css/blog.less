@@ -1,0 +1,208 @@
+body {
+    background-image: url(https://iirorwxhmjmplj5m.ldycdn.com/cloud/ljBpiKqmlpSRoijnrkroiq/blog.jpg);
+
+    &::after {
+        filter: brightness(.8);
+    }
+}
+
+.container_outer {
+    >.container_main {
+        font-family: "Hanken-Light", Verdana, Arial;
+
+        >.container {
+            padding: 60px 50px;
+
+            .fix {
+                li {
+                    padding: 30px;
+                    margin-bottom: 40px;
+                    position: relative;
+                    background: #fff;
+                    transition: all .5s;
+
+                    .pic {
+                        position: absolute;
+                        left: 30px;
+                        top: 30px;
+                        display: block;
+                        width: 40%;
+                        transition: .6s;
+
+                        img {
+                            width: 100%;
+                            display: block;
+                            max-width: 100%;
+                            margin: 0 auto;
+                            height: 275px;
+                        }
+                    }
+
+                    .con {
+                        padding-left: 50%;
+                        height: 276px;
+                        transition: .6s;
+
+                        .tit {
+                            display: block;
+                            height: 48px;
+                            line-height: 24px;
+                            color: #1a1a1a;
+                            font-size: 14px;
+                            font-family: "Hanken-Book";
+                            margin: 20px 0 8px 0;
+
+                            a {
+                                font-size: 20px;
+                                font-family: "Hanken-Book";
+                                color: #545454;
+                                font-weight: 700;
+                                letter-spacing: 0;
+                                line-height: 1.7em;
+                                text-align: left;
+
+                                &:hover {
+                                    color: #2868e9;
+                                }
+                            }
+                        }
+
+                        .date {
+                            height: 30px;
+                            line-height: 30px;
+                            color: gray;
+                            font-size: 12px;
+
+                            i {
+                                padding-right: 5px;
+                            }
+                        }
+
+                        .text {
+                            line-height: 24px;
+                            height: 72px;
+                            margin: 20px 0 25px 0;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 3;
+                        }
+
+                        .more {
+                            display: block;
+                            height: 35px;
+                            font-size: 20px;
+                            font-family: "Hanken-Book";
+                            color: #545454;
+                            font-weight: 700;
+                            letter-spacing: 0;
+                            line-height: 1.7em;
+                            text-align: left;
+                        }
+                    }
+
+                    &:nth-child(even) {
+                        .pic {
+                            left: auto;
+                            right: 30px;
+                            top: 30px;
+                        }
+
+                        .con {
+                            padding: 0 50% 0 0;
+                        }
+                    }
+
+                    &:hover {
+                        box-shadow: 0 0 10px #ccc;
+
+                        .more {
+                            transition: all .5s;
+                            transform: translateX(10px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .container_outer {
+        >.container_main {
+            >.container {
+                padding: 60px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container_outer {
+        >.container_main {
+            >.container {
+                padding: 60px 0;
+
+                .fix {
+                    padding: 0 40px;
+
+                    li {
+                        .pic {
+                            position: relative;
+                            top: auto;
+                            left: auto;
+                            right: auto;
+                            width: 100%;
+                        }
+
+                        .con {
+                            padding: 0;
+                        }
+
+                        &:nth-child(even) {
+                            .pic {
+                                left: auto;
+                                right: auto;
+                                top: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container_outer {
+        >.container_main {
+            >.container {
+                padding: 60px 20px;
+                .fix {
+                    padding: 0 10px;
+
+                    li {
+                        padding: 10px;
+
+                        .pic {
+                            position: relative;
+                            top: auto;
+                            left: auto;
+                            right: auto;
+                            width: 100%;
+
+                            img {
+                                height: auto !important;
+                            }
+                        }
+
+                        .con {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

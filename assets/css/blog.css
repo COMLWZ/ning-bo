@@ -1,0 +1,157 @@
+body {
+  background-image: url(https://iirorwxhmjmplj5m.ldycdn.com/cloud/ljBpiKqmlpSRoijnrkroiq/blog.jpg);
+}
+body::after {
+  filter: brightness(0.8);
+}
+.container_outer > .container_main {
+  font-family: "Hanken-Light", Verdana, Arial;
+}
+.container_outer > .container_main > .container {
+  padding: 60px 50px;
+}
+.container_outer > .container_main > .container .fix li {
+  padding: 30px;
+  margin-bottom: 40px;
+  position: relative;
+  background: #fff;
+  transition: all 0.5s;
+}
+.container_outer > .container_main > .container .fix li .pic {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  display: block;
+  width: 40%;
+  transition: 0.6s;
+}
+.container_outer > .container_main > .container .fix li .pic img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 275px;
+}
+.container_outer > .container_main > .container .fix li .con {
+  padding-left: 50%;
+  height: 276px;
+  transition: 0.6s;
+}
+.container_outer > .container_main > .container .fix li .con .tit {
+  display: block;
+  height: 48px;
+  line-height: 24px;
+  color: #1a1a1a;
+  font-size: 14px;
+  font-family: "Hanken-Book";
+  margin: 20px 0 8px 0;
+}
+.container_outer > .container_main > .container .fix li .con .tit a {
+  font-size: 20px;
+  font-family: "Hanken-Book";
+  color: #545454;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.7em;
+  text-align: left;
+}
+.container_outer > .container_main > .container .fix li .con .tit a:hover {
+  color: #2868e9;
+}
+.container_outer > .container_main > .container .fix li .con .date {
+  height: 30px;
+  line-height: 30px;
+  color: gray;
+  font-size: 12px;
+}
+.container_outer > .container_main > .container .fix li .con .date i {
+  padding-right: 5px;
+}
+.container_outer > .container_main > .container .fix li .con .text {
+  line-height: 24px;
+  height: 72px;
+  margin: 20px 0 25px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.container_outer > .container_main > .container .fix li .con .more {
+  display: block;
+  height: 35px;
+  font-size: 20px;
+  font-family: "Hanken-Book";
+  color: #545454;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.7em;
+  text-align: left;
+}
+.container_outer > .container_main > .container .fix li:nth-child(even) .pic {
+  left: auto;
+  right: 30px;
+  top: 30px;
+}
+.container_outer > .container_main > .container .fix li:nth-child(even) .con {
+  padding: 0 50% 0 0;
+}
+.container_outer > .container_main > .container .fix li:hover {
+  box-shadow: 0 0 10px #ccc;
+}
+.container_outer > .container_main > .container .fix li:hover .more {
+  transition: all 0.5s;
+  transform: translateX(10px);
+}
+@media screen and (max-width: 1320px) {
+  .container_outer > .container_main > .container {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container_outer > .container_main > .container {
+    padding: 60px 0;
+  }
+  .container_outer > .container_main > .container .fix {
+    padding: 0 40px;
+  }
+  .container_outer > .container_main > .container .fix li .pic {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+  }
+  .container_outer > .container_main > .container .fix li .con {
+    padding: 0;
+  }
+  .container_outer > .container_main > .container .fix li:nth-child(even) .pic {
+    left: auto;
+    right: auto;
+    top: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container_outer > .container_main > .container {
+    padding: 60px 20px;
+  }
+  .container_outer > .container_main > .container .fix {
+    padding: 0 10px;
+  }
+  .container_outer > .container_main > .container .fix li {
+    padding: 10px;
+  }
+  .container_outer > .container_main > .container .fix li .pic {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+  }
+  .container_outer > .container_main > .container .fix li .pic img {
+    height: auto !important;
+  }
+  .container_outer > .container_main > .container .fix li .con {
+    padding: 0;
+  }
+}

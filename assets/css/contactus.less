@@ -1,0 +1,228 @@
+body {
+    background-image: url(https://jjrorwxhmjmplj5m.ldycdn.com/cloud/lmBpiKqmlpSRoijnnkrpiq/contact-us-now.jpg);
+
+    &::after {
+        filter: brightness(.8);
+    }
+}
+
+.container_outer {
+    >.container_main {
+        >.container {
+            padding: 65px;
+
+            .row {
+                margin: 0;
+                >div{
+                    transition: .6s;
+                }
+            }
+
+            .t_hd {
+                padding-bottom: 20px;
+
+                >.title {
+                    font-size: 28px;
+                    color: #3c78d8;
+                    font-weight: 700;
+                    padding-bottom: 10px;
+                    background: url(https://jjrorwxhmjmplj5m.ldycdn.com/cloud/lkBpiKqmlpSRoirnrrooiq/line.png) no-repeat left bottom;
+                }
+            }
+
+            p {
+                margin: 0;
+                font-size: 18px;
+                color: #666;
+                font-weight: 400;
+                letter-spacing: 0;
+                line-height: 1.5em;
+                text-align: left;
+
+                .bi {
+                    color: #3c78d8;
+                    padding-right: 2px;
+                    font-size: 16px;
+
+                    &::before {
+                        font-weight: 400 !important;
+                    }
+                }
+            }
+
+            .touch {
+                .form {
+                    margin-top: 30px;
+
+                    input,
+                    textarea {
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        box-shadow: 1px 1px 2px rgb(0 0 0 / 10%) inset;
+                        vertical-align: middle;
+
+                        &:focus {
+                            outline: 2px #000 solid;
+                        }
+                    }
+
+                    .controls {
+                        margin-bottom: 25px;
+                        width: 30%;
+                        float: left;
+                        margin-left: 5%;
+                        position: relative;
+
+                        input {
+                            width: 100%;
+                            padding: 4px 0;
+                            text-indent: 6px;
+                            box-sizing: content-box;
+                        }
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                        &::after {
+                            content: '';
+                            clear: both;
+                        }
+
+                        .err_msg {
+                            position: absolute;
+                            height: 16px;
+                            // bottom: -16px;
+                            left: 0;
+                            right: -3px;
+                            line-height: 16px;
+                            font-size: 12px;
+                            text-align: center;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            background-color: #c00;
+                            color: #fff;
+                            opacity: .9;
+                            display: none;
+                        }
+                    }
+
+                    .textarea {
+                        width: 100%;
+                        margin-left: 0;
+
+                        textarea {
+                            width: 100%;
+                            height: 80px;
+                            padding: 4px 0;
+                            text-indent: 6px;
+                            box-sizing: content-box;
+                            margin: 0;
+                        }
+                    }
+
+                    .submit_controls {
+                        width: 100%;
+                        margin-left: 0;
+
+                        button {
+                            border: 0;
+                            border-radius: 0;
+                            background: #3c78d8;
+                            color: #fff;
+                            font-size: 18px;
+                            width: 140px;
+                            height: 40px;
+                        }
+
+                    }
+                }
+            }
+
+            .resize {
+                height: 50px;
+            }
+
+            .contact_info {
+                .c_bd {
+                    p {
+                        padding-top: 10px;
+
+                        strong {
+                            padding-right: 5px;
+                        }
+
+                        a {
+                            color: #666;
+
+                            &:hover {
+                                color: #3c78d8;
+                            }
+                        }
+                    }
+                }
+            }
+            .address{
+                margin-top: 90px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .container_outer {
+        >.container_main {
+            >.container {
+                padding: 65px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container_outer {
+        >.container_main {
+            >.container {
+                padding: 65px 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container_outer {
+        >.container_main {
+            >.container {
+                .touch {
+                    .form {
+
+                        input,
+                        textarea {
+                            &:focus {
+                                outline: 2px #ecb448 solid;
+                            }
+                        }
+
+                        .controls {
+                            margin-bottom: 10px;
+                            width: 100%;
+                            float: none;
+                            margin-left: 0;
+
+                            .err_msg {
+                                position: relative;
+                                top: 5px;
+                                background-color: transparent;
+                                color: red;
+                                font-size: 15px;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
